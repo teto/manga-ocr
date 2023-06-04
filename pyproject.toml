@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "manga-ocr"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "manga_ocr"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+        fire = "*"
+        fugashi = "*"
+		jaconv = "*"
+        loguru = "*"
+        numpy = "*"
+		Pillow = "*"
+        pyperclip = "*"
+        torch = ">=1.0"
+        transformers = ">=4.25.0"
+        unidic_lite = "*"
+
+[tool.poetry.scripts]
+manga_ocr="manga_ocr.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
